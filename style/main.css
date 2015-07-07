@@ -63,10 +63,33 @@ header .col-lg-6 p{
 }
 
 .btn-primary {
-  background: none;
+  background: transparent;
   border: 2px solid white;
   color: #ffffff;
+  font-size: 14px;
 }
+.btn-primary:hover{
+	background-color: #ffffff;
+	border-color: transparent;
+	color: #000000;
+  transition: background-color .2s ease-in;
+}
+
+.btn-success{
+	background-color: #ffc329;
+	border-color: #ffc329;
+  font-size: 14px;
+
+
+
+}
+.btn-success:hover{
+	background-color: #292929;
+	border-color: transparent;
+  transition: background-color .2s ease-in;
+
+}
+
 
 /* Customize container */
 @media (min-width: 768px) {
