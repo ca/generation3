@@ -3,6 +3,31 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
+header nav {
+  background: none!important;
+  border: none!important;
+}
+
+header nav ul li {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+header nav ul li a {
+  color: #ffffff!important;
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
+}
+
+header nav ul li.active a,
+header nav ul li a:hover {
+  background: none!important;
+  color: #ffc329!important;
+}
+
+.dropdown-menu>li>a { color: #333!important; }
+
 /* Customize container */
 @media (min-width: 768px) {
   .container {
