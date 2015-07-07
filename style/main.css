@@ -62,6 +62,12 @@ header .col-lg-6 p{
 
 }
 
+.btn-primary {
+  background: none;
+  border: 2px solid white;
+  color: #ffffff;
+}
+
 /* Customize container */
 @media (min-width: 768px) {
   .container {
