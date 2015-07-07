@@ -42,6 +42,23 @@ header nav ul li a:hover {
 
 .dropdown-menu>li>a { color: #333!important; }
 
+header .col-lg-6 h3{
+	color: #ffc329;
+	font-size: 20px;
+	line-height: 32px;
+}
+
+header .col-lg-6 h2{
+	font-size: 41px;
+	color:	#ffffff;
+}
+
+header .col-lg-6 p{
+	font-size: 17px;
+	color: #ffffff;
+
+}
+
 /* Customize container */
 @media (min-width: 768px) {
   .container {
