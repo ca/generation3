@@ -43,22 +43,22 @@ header nav ul li a:hover {
 .dropdown-menu>li>a { color: #333!important; }
 
 header .col-lg-6 h3{
-	font-family: "PT Sans";
-	color: #ffc329;
-	font-size: 20px;
-	line-height: 32px;
+  font-family: "PT Sans";
+  color: #ffc329;
+  font-size: 20px;
+  line-height: 32px;
 }
 
 header .col-lg-6 h2{
-	font-family: "Montserrat";
-	font-size: 41px;
-	color:	#ffffff;
+  font-family: "Montserrat";
+  font-size: 41px;
+  color:  #ffffff;
 }
 
 header .col-lg-6 p{
-	font-family: "PT Sans";
-	font-size: 17px;
-	color: #ffffff;
+  font-family: "PT Sans";
+  font-size: 17px;
+  color: #ffffff;
 
 }
 
@@ -69,23 +69,23 @@ header .col-lg-6 p{
   font-size: 14px;
 }
 .btn-primary:hover{
-	background-color: #ffffff;
-	border-color: transparent;
-	color: #000000;
+  background-color: #ffffff;
+  border-color: transparent;
+  color: #000000;
   transition: background-color .2s ease-in;
 }
 
 .btn-success{
-	background-color: #ffc329;
-	border-color: #ffc329;
+  background-color: #ffc329;
+  border-color: #ffc329;
   font-size: 14px;
 
 
 
 }
 .btn-success:hover{
-	background-color: #292929;
-	border-color: transparent;
+  background-color: #292929;
+  border-color: transparent;
   transition: background-color .2s ease-in;
 
 }
