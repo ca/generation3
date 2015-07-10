@@ -93,6 +93,25 @@ header .col-lg-6 p{
 
 }
 
+.box h3{
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Montserrat";
+}
+
+.btn-box{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.btn-box:hover{
+  background-color: #ffc329;
+  border-color: transparent;
+  color: #ffffff;
+  transition: background-color .2s ease-in;
+
+}
+
 
 /* Customize container */
 @media (min-width: 768px) {
