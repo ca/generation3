@@ -7,6 +7,7 @@ html, body {
 header:before {
   content: " ";
   position: absolute;
+  background-attachment: fixed;
   background-image: url(http://anpsthemes.com/constructo-demo-3/wp-content/uploads/2015/03/slider1-demo31.jpg);
   width: 100%;
   height: 100%;
@@ -14,9 +15,7 @@ header:before {
   left: 0;
 }
 
-/*header {
-  height: 100%;
-}*/
+header { height: 89vh; }
 
 header nav {
   background: none!important;
@@ -91,9 +90,11 @@ header .col-lg-6 p{
 }
 
 .btn-danger {
-  background-color: #000000;
+  background-color: #292929;
   border-color: transparent;
   color: #ffffff;
+  font-size: 15px;
+  padding: 12px 25px;
 }
 
 .btn-danger:hover {
@@ -107,6 +108,7 @@ header .col-lg-6 p{
   content: " ";
   position: absolute;
   background-color: #ffc329;
+  background-image: url(http://anpsthemes.com/constructo-demo-3/wp-content/uploads/2014/11/1400x200demo21.jpg?id=702) !important;
   width: 100%;
   height: 175px;
   z-index: -1;
@@ -117,6 +119,11 @@ header .col-lg-6 p{
   color: #ffffff;
   font-size: 18px;
   font-family: "Montserrat";
+}
+
+#callout .row {
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .btn-container {
