@@ -41,27 +41,22 @@ header nav ul li a:hover {
 
 .dropdown-menu>li>a { color: #333!important; }
 
-header .col-lg-6 h3{
+header .col-lg-6 h3 {
   font-family: "PT Sans";
   color: #ffc329;
   font-size: 20px;
-  /*position: relative;
-  top: 300px;*/
-
 }
 
-header .col-lg-6 h2{
-
+header .col-lg-6 h2 {
   font-family: "Montserrat";
   font-size: 41px;
   color:  #ffffff;
 }
 
-header .col-lg-6 p{
+header .col-lg-6 p {
   font-family: "PT Sans";
   font-size: 17px;
   color: #ffffff;
-
 }
 
 .btn-primary {
@@ -96,7 +91,6 @@ header .col-lg-6 p{
   font-size: 15px;
   padding: 12px 25px;
 }
-
 .btn-danger:hover {
   background-color: #ffc329;
   border-color: transparent;
@@ -117,8 +111,8 @@ header .col-lg-6 p{
 
 #callout h3 {
   color: #ffffff;
-  font-size: 18px;
   font-family: "Montserrat";
+  font-size: 18px;
 }
 
 #callout .row {
@@ -127,9 +121,61 @@ header .col-lg-6 p{
 }
 
 .btn-container {
-  text-align: center!important;
+  text-align: right!important;
 }
 
+#projects:before {
+  content: " ";
+  position: absolute;
+  background-color: #262626 !important;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+  left: 0;
+}
+
+#projects { height: 450px; }
+
+#projects h4 {
+  color: #ffffff;
+  margin-bottom: 50px;
+  padding-top: 50px;
+}
+
+#call-to-action:before {
+  content: " ";
+  position: absolute;
+  background-color: #ffc329;
+  width: 100%;
+  height: 300px;
+  z-index: -1;
+  left: 0;
+}
+
+#call-to-action {
+  color: #ffffff;
+  height: 300px;
+  text-align: center;
+}
+
+#call-to-action .row {
+  padding-top: 80px;
+}
+
+footer:before {
+  content: " ";
+  position: absolute;
+  background-color: #262626 !important;
+  width: 100%;
+  height: 250px;
+  z-index: -1;
+  left: 0;
+}
+
+footer {
+  color: #ffffff;
+  height: 250px;
+}
 
 /* Customize container */
 @media (min-width: 768px) {
