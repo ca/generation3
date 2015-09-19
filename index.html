@@ -3,8 +3,8 @@
 <head>
   <title>Generation 3 Inc</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-  <link href="style/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
   <header class="container">
@@ -33,7 +33,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#">
-            <img alt="Brand" src="img/logo_white.png" width="150">
+            <img alt="Brand" src="img/logo_white.png" width="175">
           </a>
         </div>
 
@@ -82,13 +82,13 @@
   </section>
   <section class="container" id="services">
     <article class="col-lg-4">
-      <img src="http://www.placehold.it/347x166">
+      <img src="img/plumbing_thumb.jpg">
       <h5>PLUMBING</h5>
       <em>NJ STATE PLUMBING LICENSE # 11872</em><br><br>
       <p>Constructo Construction Inc provides building services to clients who value diligence, resourcefulness and creativity in a partner.</p>
     </article>
     <article class="col-lg-4">
-      <img src="http://www.placehold.it/347x166">
+      <img src="img/cooling_thumb2.jpg">
       <h5>HEATING &amp; AIR CONDITIONING</h5><br>
       <p>The active GIII staff have over 100 years combined experience installing and mainting home a/c and heating systems ranging from Hi-Velocity to central heating and a/c.</p>
     </article>
@@ -105,7 +105,7 @@
       <img src="img/irene_thumb.jpg">
     </div>
     <div class="col-lg-4">
-      <img src="http://www.placehold.it/360x267">
+      <img src="img/cooling_thumb_360.jpg">
     </div>
     <div class="col-lg-4">
       <img src="http://www.placehold.it/360x267">
@@ -161,25 +161,17 @@
       width: 100%;
     }
     #contact-us .col-lg-6 { padding: 0; }
+    #contact-us .col-lg-6:last-child { padding: 20px; }
     #contact-us .info {
-      /*color: white;*/
-      padding-top: 50px;
-      position: absolute;
-      text-align: center;
-      /*width: 100%;*/
-      z-index: 1;
+      margin: 50px auto;
+      text-align: left;
+      width: 35%;
     }
-    #contact-us .info h1 {
-      font-size: 56px;
-      /*text-shadow: 1px 1px 10px black;*/
-    }
-    #contact-us .info .col-lg-4 {
-      font-size: 24px;
-      text-align: center;
-      /*text-shadow: 1px 1px 10px black;*/
-    }
-    #contact-us .info .col-lg-4 i {
-      font-size: 42px;
+    #contact-us .info i {
+      /*font-size: ;*/
+      margin-right: 10px; }
+    #contact-us .info span {
+      font-size: 16px;
     }
     #map { width: 100%; height: 400px; }
   </style>
@@ -188,19 +180,13 @@
       <div id="map"></div>
     </div>
     <div class="col-lg-6">
-      <h1>CONTACT US</h1>
-      <!-- <div class="col-lg-4">
-        <i class="glyphicon glyphicon-earphone"></i><br>
-        201 445 6969
+      <h1>Contact Us</h1>
+      <h3>Get your free quote today!</h3>
+      <div class="info">
+        <i class="glyphicon glyphicon-earphone"></i><span>201 445 6969</span><br><br>
+        <i class="glyphicon glyphicon-envelope"></i><span><a href="mailto:generation3inc@aol.com">generation3inc@aol.com</a></span><br><br>
+        <i class="glyphicon glyphicon-time"></i><span>Mon - Sat: 7:00 - 17:00</span>
       </div>
-      <div class="col-lg-4">
-        <i class="glyphicon glyphicon-envelope"></i><br>
-        generation3inc@aol.com
-      </div>
-      <div class="col-lg-4">
-        <i class="glyphicon glyphicon-time"></i><br>
-        Mon - Sat: 7:00 - 17:00
-      </div> -->
     </div>
     
   </section>
@@ -208,7 +194,7 @@
     <div class="col-lg-3">
       <h3>About us</h3>
       <img src="img/logo_white.png" width="150"><br><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam turpis quam, sodales in ante sagittis, varius efficitur mauris.</p>
+      <p>Est. 1991 - Generation III, inc. has the capability to perform all phases of your plumbing, heating, cooling, or electric job!</p>
     </div>
     <div class="col-lg-3 navigation">
       <h3>Navigation</h3>
@@ -254,17 +240,17 @@
       google.maps.event.addDomListener(window, 'load', init);
       function init() {
           var mapOptions = {
-              zoom: 11,
+              zoom: 15,
               disableDefaultUI: true,
               scrollwheel: false,
-              center: new google.maps.LatLng(40.6700, -73.9400), // New York
+              center: new google.maps.LatLng(41.0115591,-74.1224031), // Generation III, inc. HQ
               styles: [{"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"color":"#f7f1df"}]},{"featureType":"landscape.natural","elementType":"geometry","stylers":[{"color":"#d0e3b4"}]},{"featureType":"landscape.natural.terrain","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi.medical","elementType":"geometry","stylers":[{"color":"#fbd3da"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#bde6ab"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffe15f"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#efd151"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"color":"black"}]},{"featureType":"transit.station.airport","elementType":"geometry.fill","stylers":[{"color":"#cfb2db"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#a2daf2"}]}]
           };
 
           var mapElement = document.getElementById('map');
           var map = new google.maps.Map(mapElement, mapOptions);
           var marker = new google.maps.Marker({
-              position: new google.maps.LatLng(40.6700, -73.9400),
+              position: new google.maps.LatLng(41.0115591,-74.1224031),
               map: map,
               title: 'Generation III, inc.'
           });
