@@ -151,22 +151,22 @@ header .col-lg-6 p {
   transition: background-color .2s ease-in;
 }
 
-#services { margin-bottom: 50px; }
-#services article img { border-radius: 2px; }
-#services article h5 {
+#what-we-offer { margin-bottom: 50px; }
+#what-we-offer article img { border-radius: 2px; }
+#what-we-offer article h5 {
   font-size: 16px;
   font-weight: bold;
   margin-top: 20px;
   text-transform: uppercase;
 }
-#services article em {
+#what-we-offer article em {
   color: #727272;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: lighter;
   text-transform: uppercase;
 }
-#services article p {
+#what-we-offer article p {
   color: #727272;
   font-family: 'PT Sans';
   font-size: 14px;
@@ -220,24 +220,26 @@ header .col-lg-6 p {
   padding-top: 50px;
 }
 
-#what-we-offer {
+#services {
   margin-bottom: 50px;
   margin-top: 50px;
 }
-#what-we-offer .nav {
+#services .nav {
   border-right: 1px solid #ececec;
 }
-#what-we-offer .nav li {
+#services .nav li {
   border-top: 1px solid #ececec;
   text-align: center;
 }
-#what-we-offer .nav :first-child { border-top: none; }
-#what-we-offer .nav li.active {
-  background-color: none;
-  border-left: 9px solid #000000;
-  border-top: 1px solid #ececec;
+#services .nav :first-child { border-top: none; }
+#services .nav li.active {
+  border-left: 2px solid #000000;
+  margin-left: -2px;
 }
-#what-we-offer .nav li a {
+#services .nav li.active :focus {
+  background: none;
+}
+#services .nav li a {
   color: #272727;
   font-size: 14px;
   font-weight: bold;

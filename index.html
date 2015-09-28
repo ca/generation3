@@ -5,6 +5,30 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="style/main.css">
+  <style type="text/css">
+  .btn-danger:focus {
+    color: #fff;
+    background-color: #292929;
+    border-color: transparent;
+  }
+  .btn-success:focus {
+    color: #fff;
+    background-color: #ffc329;
+    border-color: transparent;
+  }
+  .modal-header {
+    background-color: #292929;
+    color: #ffffff;
+  }
+  .close, .close:hover { color: #ffffff; }
+  .modal-dialog { margin-top: 20vh; }
+  .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background: none;
+  }
+  header .row:last-child {
+    margin-top: 12vh;
+  }
+  </style>
 </head>
 <body>
   <header class="container">
@@ -15,7 +39,7 @@
         <a href="" target="_blank" class="symbol">linkedin</a>
         <i class="glyphicon glyphicon-google"></i>
       </div>
-      <div class="col-lg-2 col-lg-offset-4"><i class="glyphicon glyphicon-time"></i> Mon - Sat: 7:00 - 17:00</div>
+      <div class="col-lg-2 col-lg-offset-4"><i class="glyphicon glyphicon-time"></i> Mon - Sat: 7AM - 5PM</div>
       <div class="col-lg-2" style="width:12%"><i class="glyphicon glyphicon-earphone"></i> 201 445 6969</div>
       <div class="col-lg-2" style="width:19%">
         <a href="mailto:generation3inc@aol.com" style="color: white; text-decoration: none">
@@ -41,6 +65,7 @@
         <div class="collapse navbar-collapse" id="generation-nav">
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#">Home</a></li>
+            <li><a href="#callout">What We Do</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -52,9 +77,8 @@
                 <li><a href="#">Home Improvement</a></li>
               </ul>
             </li>
-            <li><a href="#">What We Do</a></li>
             <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
             <li><a href="#"><i class="glyphicon glyphicon-search"></i></a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
@@ -65,27 +89,86 @@
         <h3>PLUMBING, HEATING, A/C &amp; ELECTRIC</h3>
         <h2>Generation III, Inc.</h2>
         <p>Jerry Pignatelli, owner of GIII operates under NJ Master Plumbers License # 11872 and NJ Master Electricians License # XXXXXX. Generation III can get all phases of your job done!</p>
-        <button class="btn btn-lg btn-success">GET A QUOTE</button>
+        <button class="btn btn-lg btn-success" data-toggle="modal" data-target="#get-a-quote">GET A QUOTE</button>
         <!-- <button class="btn btn-lg btn-primary">CONTINUE</button> -->
       </div>
     </div>
   </header>
+  <div class="modal fade" id="get-a-quote" tabindex="-1" role="dialog" aria-labelledby="quote-label">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="quote-label">Schedule a free quote today</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="quote-email" class="col-sm-2 control-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="quote-email" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="quote-phone" class="col-sm-2 control-label">Phone Number</label>
+              <div class="col-sm-10">
+                <input type="tel" class="form-control" id="quote-phone" placeholder="Phone Number" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="quote-address" class="col-sm-2 control-label">Address</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="quote-address" placeholder="Address" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="quote-date" class="col-sm-2 control-label">Date</label>
+              <div class="col-sm-10">
+                <input type="date" class="form-control" id="quote-date" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="quote-services" class="col-sm-2 control-label">Service</label>
+              <div class="col-sm-10" id="quote-services">
+                <label class="radio-inline">
+                  <input type="radio" name="quote-service-plumbing" id="quote-service-plumbing" value="plumbing"> Plumbing
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="quote-service-heating" id="quote-service-heating" value="heating"> Heating
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="quote-service-cooling" id="quote-service-cooling" value="cooling"> Cooling
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="quote-service-electric" id="quote-service-electric" value="electric"> Electric
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-success">Schedule Quote</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <section class="container" id="callout">
     <div class="row">
       <div class="col-lg-9">
         <h3>FAST AND RELIABLE SERVICE FOR YOUR HOME OR A QUICK FIX, WE DO IT ALL!</h3>
       </div>
       <div class="col-lg-3 btn-container">
-        <button class="btn btn-lg btn-danger">GET A QUOTE</button>
+        <button class="btn btn-lg btn-danger" data-toggle="modal" data-target="#get-a-quote">GET A QUOTE</button>
       </div>
     </div>
   </section>
-  <section class="container" id="services">
+  <section class="container" id="what-we-offer">
     <article class="col-lg-4">
       <img src="img/plumbing_thumb.jpg">
       <h5>PLUMBING</h5>
       <em>NJ STATE PLUMBING LICENSE # 11872</em><br><br>
-      <p>Constructo Construction Inc provides building services to clients who value diligence, resourcefulness and creativity in a partner.</p>
+      <p>Generation 3 Inc. provides plumbing services to clients who value diligence, resourcefulness and creativity in a partner.</p>
     </article>
     <article class="col-lg-4">
       <img src="img/cooling_thumb2.jpg">
@@ -111,7 +194,7 @@
       <img src="http://www.placehold.it/360x267">
     </div>
   </section>
-  <section class="container" id="what-we-offer">
+  <section class="container" id="services">
     <div class="col-lg-2">
       <ul class="nav nav-stacked">
         <li role="presentation" class="active">
@@ -129,13 +212,27 @@
       </ul>
     </div>
     <div class="col-lg-6 tab-content">
+      <style type="text/css">
+      .tab-pane h3 {
+        margin-top: 0;
+      }
+      </style>
       <div role="tabpanel" class="tab-pane active" id="plumbing">
         <h3>Generation III, Inc. operates with a New Jersey Plumbing License # 11872</h3>
-        <p>You can be confident that they will get the job done safely and to code.</p>
+        <p>We perform all phases of plumbing in your home or business from leaking faucets, toilets, water heaters, sewer &amp; drain cleaning, sump pumps, french drains, bathroom &amp; kitchen renovations, or new installations. We can provide better water quality in your home with reverse osmosis filters. 24 Hour Emergency Service is available for all of our plumbing products. Get your current system maintenanced with Generation III's Preventive Maintenance so that your system will always stay up and running. Preventive maintenance will extend the life of your system and keep you comfortable and safe.</p>
       </div>
-      <div role="tabpanel" class="tab-pane" id="heating">h</div>
-      <div role="tabpanel" class="tab-pane" id="air-conditioning">ac</div>
-      <div role="tabpanel" class="tab-pane" id="electric">e</div>
+      <div role="tabpanel" class="tab-pane" id="heating">
+        <h3>Generation III, Inc. operates with a New Jersey Plumbing License # 11872</h3>
+        <p>Our team has extensive experience working with all types of heating systems including hot air furnaces, hot water and steam boilers, heat pumps, radiant heat, zoning controls, thermostats, and custom ductwork. We also do new installations, replacements, new construction, and repairs. No job is too big or too small. Estimates are always free for system installations. We work on residential or commercial applications for heating systems. Let us help you by providing the system that you need at an affordable price. Preventive maintenance is key to keeping your system up and running! It pays you by extending the life of your system, always keeping you comfortable and safe.</p>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="air-conditioning">
+        <h3>Generation III, Inc. operates with a New Jersey Plumbing License # 11872</h3>
+        <p>We perform all phases of plumbing in your home or business from leaking faucets, toilets, water heaters, sewer &amp; drain cleaning, sump pumps, french drains, bathroom &amp; kitchen renovations, or new installations. We can provide better water quality in your home with reverse osmosis filters. 24 Hour Emergency Service is available for all of our plumbing products. Get your current system maintenanced with Generation III's Preventive Maintenance so that your system will always stay up and running. Preventive maintenance will extend the life of your system and keep you comfortable and safe.</p>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="electric">
+        <h3>Generation III, Inc. operates with a New Jersey Electric License # XXXXX</h3>
+        <p>GJ Pignatelli Electric has just joined forces with Generation III, Inc. to bring all phases of your home repair or improvement directly to you.</p>
+      </div>
     </div>
     <article class="col-lg-4">
       <img src="http://www.placehold.it/347x166">
@@ -147,7 +244,7 @@
     <div class="row">
       <div class="col-lg-12">
         <h1>FROM IDEA, PLAN TO FINAL SOLUTION</h1><br>
-        <button class="btn btn-lg btn-danger">GET A QUOTE TODAY</button>
+        <button class="btn btn-lg btn-danger" data-toggle="modal" data-target="#get-a-quote">GET A QUOTE TODAY</button>
       </div>
     </div>
   </section>
@@ -185,10 +282,9 @@
       <div class="info">
         <i class="glyphicon glyphicon-earphone"></i><span>201 445 6969</span><br><br>
         <i class="glyphicon glyphicon-envelope"></i><span><a href="mailto:generation3inc@aol.com">generation3inc@aol.com</a></span><br><br>
-        <i class="glyphicon glyphicon-time"></i><span>Mon - Sat: 7:00 - 17:00</span>
+        <i class="glyphicon glyphicon-time"></i><span>Mon - Sat: 7AM - 5PM</span>
       </div>
     </div>
-    
   </section>
   <footer class="container">
     <div class="col-lg-3">
