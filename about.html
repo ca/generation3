@@ -1,12 +1,21 @@
 <!doctype html>
 <html>
 <head>
-  <title>Generation 3 Inc</title>
+  <title>About Generation 3 Inc</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="style/main.css">
+  <style type="text/css">
+  #about header { height: 250px; }
+  #about header #caption { margin: 0; text-align: center; }
+  #about header #caption h2 {
+    font-family: "Montserrat";
+    font-size: 41px;
+    color: #ffffff;
+  }
+  </style>
 </head>
-<body>
+<body id="about">
   <header class="container">
     <div class="row" id="metadata">
       <div class="col-lg-2" id="social-icons">
@@ -40,7 +49,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="generation-nav">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="#callout">What We Do</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
@@ -53,24 +62,18 @@
                 <li><a href="#">Home Improvement</a></li>
               </ul>
             </li>
-            <li><a href="#">About Us</a></li>
+            <li class="active"><a href="/about">About Us</a></li>
             <li><a href="#contact-us">Contact Us</a></li>
             <li><a href="#"><i class="glyphicon glyphicon-search"></i></a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-    <div class="row">
-      <div class="col-lg-6 col-md-12">
-        <h3>PLUMBING, HEATING, A/C &amp; ELECTRIC</h3>
-        <h2>Generation III, Inc.</h2>
-        <p>Jerry Pignatelli, owner of GIII operates under NJ Master Plumbers License # 11872 and NJ Master Electricians License # XXXXXX. Generation III can get all phases of your job done!</p>
-        <button class="btn btn-lg btn-success" data-toggle="modal" data-target="#get-a-quote">GET A QUOTE</button>
-        <!-- <button class="btn btn-lg btn-primary">CONTINUE</button> -->
-      </div>
+    <div class="row" id="caption">
+      <div class="col-lg-12"><h2>Generation III, Inc.</h2></div>
     </div>
   </header>
-  <div class="modal fade" id="get-a-quote" tabindex="-1" role="dialog" aria-labelledby="quote-label">
+  <!-- <div class="modal fade" id="get-a-quote" tabindex="-1" role="dialog" aria-labelledby="quote-label">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -128,8 +131,8 @@
         </div>
       </div>
     </div>
-  </div>
-  <section class="container" id="callout">
+  </div> -->
+  <!-- <section class="container" id="callout">
     <div class="row">
       <div class="col-lg-9">
         <h3>FAST AND RELIABLE SERVICE FOR YOUR HOME OR A QUICK FIX, WE DO IT ALL!</h3>
@@ -138,8 +141,8 @@
         <button class="btn btn-lg btn-danger" data-toggle="modal" data-target="#get-a-quote">GET A QUOTE</button>
       </div>
     </div>
-  </section>
-  <section class="container" id="what-we-offer">
+  </section> -->
+  <!-- <section class="container" id="what-we-offer">
     <article class="col-lg-4">
       <img src="img/plumbing_thumb.jpg">
       <h5>PLUMBING</h5>
@@ -157,8 +160,8 @@
       <em>NJ STATE ELECTRIC LICENSE # XXXXXX</em><br><br>
       <p>Generation III, Inc. recently joined GJ Pignatelli Electric to bring more value to your home in any job that we do!</p>
     </article>
-  </section>
-  <section class="container" id="projects">
+  </section> -->
+  <!-- <section class="container" id="projects">
     <h4>FEATURED WORK</h4>
     <div class="col-lg-4">
       <img src="img/irene_thumb.jpg">
@@ -169,8 +172,8 @@
     <div class="col-lg-4">
       <img src="http://www.placehold.it/360x267">
     </div>
-  </section>
-  <section class="container" id="services">
+  </section> -->
+  <!-- <section class="container" id="services">
     <div class="col-lg-2">
       <ul class="nav nav-stacked">
         <li role="presentation" class="active">
@@ -210,7 +213,7 @@
       <h5>GET YOUR FREE QUOTE TODAY</h5>
       <p>Get a free quote on any job today, whether it be plumbing, heating, a/c, or electric, Generation III does it all!</p>
     </article>
-  </section>
+  </section> -->
   <section class="container" id="call-to-action">
     <div class="row">
       <div class="col-lg-12">
