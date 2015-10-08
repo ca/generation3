@@ -1,18 +1,22 @@
 <!doctype html>
 <html>
 <head>
-  <title>About | Generation 3 Inc</title>
+  <title>Services | Generation 3 Inc</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="style/main.css">
   <style type="text/css">
+  #service_page header,
   #about header { height: 250px; }
+  #service_page header #caption,
   #about header #caption { margin: 0; text-align: center; }
+  #service_page header #caption h2,
   #about header #caption h2 {
     font-family: "Montserrat";
     font-size: 41px;
     color: #ffffff;
   }
+  #service_page #what-we-offer:before,
   #about #what-we-offer:before {
     content: " ";
     position: absolute;
@@ -22,12 +26,15 @@
     z-index: -1;
     left: 0;
   }
+  #service_page #what-we-offer,
   #about #what-we-offer { background-color: #ffffff; }
+  #service_page #what-we-offer article,
   #about #what-we-offer article { padding-top: 20px; }
+  /*#service_page #what-we-offer article img,*/
   #about #what-we-offer article img { border-radius: 50%; width: 100px; }
   </style>
 </head>
-<body id="about">
+<body id="service_page">
   <header class="container">
     <div class="row" id="metadata">
       <div class="col-lg-2" id="social-icons">
@@ -82,7 +89,7 @@
       </div><!-- /.container-fluid -->
     </nav>
     <div class="row" id="caption">
-      <div class="col-lg-12"><h2>Generation III, Inc.</h2></div>
+      <div class="col-lg-12"><h2>Services</h2></div>
     </div>
   </header>
   <!-- <div class="modal fade" id="get-a-quote" tabindex="-1" role="dialog" aria-labelledby="quote-label">
@@ -155,24 +162,25 @@
     </div>
   </section> -->
   <section class="container" id="what-we-offer">
-    <article class="col-lg-2">
-      <img src="img/profile_photo.jpg">
-      <!-- <h5>PLUMBING</h5>
+    <article class="col-lg-4">
+      <img src="img/plumbing_thumb.jpg">
+      <h5>PLUMBING</h5>
       <em>NJ STATE PLUMBING LICENSE # 11872</em><br><br>
-      <p>Generation 3 Inc. provides plumbing services to clients who value diligence, resourcefulness and creativity in a partner.</p> -->
-    </article>
-    <article class="col-lg-6">
-      <h5>HEATING &amp; AIR CONDITIONING</h5><br>
-      <p>Jerry has been in the business since he was a young man. His family has been in the field for over sixty years! In addition to growing up with hands on experience, Jerry attended Bergen County Tech, and has taken many courses over the years to perfect his craft. He is a New Jersey Master Plumber License #11872. In 1991 Jerry started Generation III. Together with his wife, Julie, the business has grown to be the success it is today. Jerry is also a member of the Waldwick and Ho-Ho-Kus Chambers of Commerce, the Waldwick Community Alliance, the NJ State League of Master Plumbers, and MyNJ Plumber. Generation III supports small business and the community. GIII has built its reputation on honesty, knowledge, and satisfaction.</p>
+      <p>Generation 3 Inc. provides plumbing services to clients who value diligence, resourcefulness and creativity in a partner.</p>
     </article>
     <article class="col-lg-4">
-      <h5>PLUMBING</h5>
-      <em>NJ STATE PLUMBERS LICENSE # XXXXXX</em><br><br>
+      <img src="img/cooling_thumb2.jpg">
+      <h5>HEATING &amp; AIR CONDITIONING</h5><br>
+      <p>The active GIII staff have over 100 years combined experience installing and mainting home a/c and heating systems ranging from Hi-Velocity to central heating and a/c.</p>
+    </article>
+    <article class="col-lg-4">
+      <img src="http://www.placehold.it/347x166">
       <h5>ELECTRIC</h5>
       <em>NJ STATE ELECTRIC LICENSE # XXXXXX</em><br><br>
+      <p>Generation III, Inc. recently joined GJ Pignatelli Electric to bring more value to your home in any job that we do!</p>
     </article>
   </section>
-  <!-- <section class="container" id="projects">
+  <section class="container" id="projects">
     <h4>FEATURED WORK</h4>
     <div class="col-lg-4">
       <img src="img/irene_thumb.jpg">
@@ -183,8 +191,8 @@
     <div class="col-lg-4">
       <img src="http://www.placehold.it/360x267">
     </div>
-  </section> -->
-  <!-- <section class="container" id="services">
+  </section>
+  <section class="container" id="services">
     <div class="col-lg-2">
       <ul class="nav nav-stacked">
         <li role="presentation" class="active">
@@ -224,7 +232,7 @@
       <h5>GET YOUR FREE QUOTE TODAY</h5>
       <p>Get a free quote on any job today, whether it be plumbing, heating, a/c, or electric, Generation III does it all!</p>
     </article>
-  </section> -->
+  </section>
   <section class="container" id="call-to-action">
     <div class="row">
       <div class="col-lg-12">
