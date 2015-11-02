@@ -4,6 +4,7 @@
   <title>Generation 3 Inc</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="style/bootstrap-lightbox.min.css">
   <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
@@ -64,7 +65,7 @@
       <div class="col-lg-6 col-md-12">
         <h3>PLUMBING, HEATING, A/C &amp; ELECTRIC</h3>
         <h2>Generation III, Inc.</h2>
-        <p>Jerry Pignatelli, owner of GIII operates under NJ Master Plumbers License # 11872 and NJ Master Electricians License # XXXXXX. Generation III can get all phases of your job done!</p>
+        <p>Jerry Pignatelli, owner of GIII operates under NJ Master Plumbers License # 11872 and NJ Master Electricians License # 17552. Generation III can get all phases of your job done!</p>
         <button class="btn btn-lg btn-success" data-toggle="modal" data-target="#get-a-quote">GET A QUOTE</button>
         <!-- <button class="btn btn-lg btn-primary">CONTINUE</button> -->
       </div>
@@ -129,6 +130,12 @@
       </div>
     </div>
   </div>
+  <div id="projects_irene" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="lightbox-content">
+      <img src="img/irene.jpg">
+      <div class="lightbox-caption"><p>Jerry Working Hard During Hurricane Irene.</p></div>
+    </div>
+  </div>
   <section class="container" id="callout">
     <div class="row">
       <div class="col-lg-9">
@@ -154,14 +161,14 @@
     <article class="col-lg-4">
       <img src="http://www.placehold.it/347x166">
       <h5>ELECTRIC</h5>
-      <em>NJ STATE ELECTRIC LICENSE # XXXXXX</em><br><br>
+      <em>NJ STATE ELECTRIC LICENSE # 17552</em><br><br>
       <p>Generation III, Inc. recently joined GJ Pignatelli Electric to bring more value to your home in any job that we do!</p>
     </article>
   </section>
   <section class="container" id="projects">
     <h4>FEATURED WORK</h4>
     <div class="col-lg-4">
-      <img src="img/irene_thumb.jpg">
+      <a data-toggle="lightbox" href="#projects_irene"><img src="img/irene_thumb.jpg"></a>
     </div>
     <div class="col-lg-4">
       <img src="img/cooling_thumb_360.jpg">
@@ -201,7 +208,7 @@
         <p>We perform all phases of plumbing in your home or business from leaking faucets, toilets, water heaters, sewer &amp; drain cleaning, sump pumps, french drains, bathroom &amp; kitchen renovations, or new installations. We can provide better water quality in your home with reverse osmosis filters. 24 Hour Emergency Service is available for all of our plumbing products. Get your current system maintenanced with Generation III's Preventive Maintenance so that your system will always stay up and running. Preventive maintenance will extend the life of your system and keep you comfortable and safe.</p>
       </div>
       <div role="tabpanel" class="tab-pane" id="electric">
-        <h3>Generation III, Inc. operates with a New Jersey Electric License # XXXXX</h3>
+        <h3>Generation III, Inc. operates with a New Jersey Electric License # 17552</h3>
         <p>GJ Pignatelli Electric has just joined forces with Generation III, Inc. to bring all phases of your home repair or improvement directly to you.</p>
       </div>
     </div>
@@ -244,12 +251,12 @@
       <h3>Navigation</h3>
       <ul>
         <li class="active"><a href="/">Home</a></li>
-        <li><a href="http://www.google.com">Services</a></li>
-        <li><a href="http://www.google.com">What We Do</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/#callout">What We Do</a></li>
       </ul>
       <ul>
-        <li><a href="http://www.google.com">About Us</a></li>
-        <li><a href="http://www.google.com">Contact Us</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="#contact-us">Contact Us</a></li>
       </ul>
     </div>
     <div class="col-lg-3 tagcloud">
@@ -279,7 +286,8 @@
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>      
+  <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <script src="javascript/bootstrap-lightbox.min.js"></script>
   <script type="text/javascript">
       google.maps.event.addDomListener(window, 'load', init);
       function init() {
