@@ -6,48 +6,6 @@
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="style/bootstrap-lightbox.min.css">
   <link rel="stylesheet" href="style/main.css">
-  <style type="text/css">
-    #service_page header,
-    #about header { height: 250px; }
-    #service_page header #caption,
-    #about header #caption { margin: 0; text-align: center; }
-    #service_page header #caption h2,
-    #about header #caption h2 {
-      font-family: "Montserrat";
-      font-size: 41px;
-      color: #ffffff;
-    }
-    #service_page #services:before {
-      content: " ";
-      position: absolute;
-      background-color: #ffffff !important;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      left: 0;
-    }
-    #service_page #services { margin-top: 0; }
-    #service_page #services div[class*="col-*"] { padding-top: 50px; }
-    #service_page #what-we-offer:before,
-    #about #what-we-offer:before {
-      content: " ";
-      position: absolute;
-      background-color: #ffffff;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      left: 0;
-    }
-    #service_page #what-we-offer,
-    #about #what-we-offer { background-color: #ffffff; }
-    #about #what-we-offer article { padding-top: 20px; }
-    #about #what-we-offer article img { border-radius: 50%; width: 100px; }
-    #service_page #what-we-offer h4 {
-      color: #333;
-      margin-bottom: 50px;
-      padding-top: 50px;
-    }
-  </style>
 </head>
 <body id="service_page">
   <header class="container">
@@ -58,7 +16,7 @@
         <a href="" target="_blank" class="symbol">linkedin</a>
         <i class="glyphicon glyphicon-google"></i>
       </div>
-      <div class="col-lg-2 col-lg-offset-4"><i class="glyphicon glyphicon-time"></i> Mon - Sat: 7AM - 5PM</div>
+      <div class="col-lg-2 col-lg-offset-4" style="width:18%"><i class="glyphicon glyphicon-time"></i> 24/7 Emergency Service</div>
       <div class="col-lg-2" style="width:12%"><i class="glyphicon glyphicon-earphone"></i> 201 445 6969</div>
       <div class="col-lg-2" style="width:19%">
         <a href="mailto:generation3inc@aol.com">
@@ -107,65 +65,65 @@
       <div class="col-lg-12"><h2>Services</h2></div>
     </div>
   </header>
-  <!-- <div class="modal fade" id="get-a-quote" tabindex="-1" role="dialog" aria-labelledby="quote-label">
+  <div class="modal fade" id="get-a-quote" tabindex="-1" role="dialog" aria-labelledby="quote-label">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <h4 class="modal-title" id="quote-label">Schedule a free quote today</h4>
         </div>
+        <form class="form-horizontal" action="mailto:alexvallorosi@gmail.com?subject=Request for Quote" enctype="text/plain" method="post">
         <div class="modal-body">
-          <form class="form-horizontal">
             <div class="form-group">
               <label for="quote-email" class="col-sm-2 control-label">Email</label>
               <div class="col-sm-10">
-                <input type="email" class="form-control" id="quote-email" placeholder="Email">
+                <input type="email" class="form-control" id="quote-email" placeholder="Email" name="Email Address">
               </div>
             </div>
             <div class="form-group">
               <label for="quote-phone" class="col-sm-2 control-label">Phone Number</label>
               <div class="col-sm-10">
-                <input type="tel" class="form-control" id="quote-phone" placeholder="Phone Number" required>
+                <input type="tel" class="form-control" id="quote-phone" placeholder="Phone Number" name="Phone Number" required>
               </div>
             </div>
             <div class="form-group">
               <label for="quote-address" class="col-sm-2 control-label">Address</label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" id="quote-address" placeholder="Address" required>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="quote-date" class="col-sm-2 control-label">Date</label>
-              <div class="col-sm-10">
-                <input type="date" class="form-control" id="quote-date" placeholder="Email">
+                <input type="text" class="form-control" id="quote-address" placeholder="Address" name="Address" required>
               </div>
             </div>
             <div class="form-group">
               <label for="quote-services" class="col-sm-2 control-label">Service</label>
               <div class="col-sm-10" id="quote-services">
                 <label class="radio-inline">
-                  <input type="radio" name="quote-service-plumbing" id="quote-service-plumbing" value="plumbing"> Plumbing
+                  <input type="radio" name="Quote Service" id="quote-service-plumbing" value="plumbing"> Plumbing
                 </label>
                 <label class="radio-inline">
-                  <input type="radio" name="quote-service-heating" id="quote-service-heating" value="heating"> Heating
+                  <input type="radio" name="Quote Service" id="quote-service-heating" value="heating"> Heating
                 </label>
                 <label class="radio-inline">
-                  <input type="radio" name="quote-service-cooling" id="quote-service-cooling" value="cooling"> Cooling
+                  <input type="radio" name="Quote Service" id="quote-service-cooling" value="cooling"> Cooling
                 </label>
                 <label class="radio-inline">
-                  <input type="radio" name="quote-service-electric" id="quote-service-electric" value="electric"> Electric
+                  <input type="radio" name="Quote Service" id="quote-service-electric" value="electric"> Electric
                 </label>
               </div>
             </div>
-          </form>
+            <div class="form-group">
+              <label for="quote-phone" class="col-sm-2 control-label">Additional Details</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" id="quote-phone" placeholder="Please describe the problem" name="Additional Details" required></textarea>
+              </div>
+            </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           <button type="submit" class="btn btn-success">Schedule Quote</button>
         </div>
+        </form>
       </div>
     </div>
-  </div> -->
+  </div>
   <section class="container" id="services">
     <div class="col-lg-2">
       <ul class="nav nav-stacked">
@@ -202,7 +160,7 @@
       </div>
     </div>
     <article class="col-lg-4">
-      <img src="http://www.placehold.it/347x166">
+      <img src="img/head_thumb.jpg">
       <h5>GET YOUR FREE QUOTE TODAY</h5>
       <p>Get a free quote on any job today, whether it be plumbing, heating, a/c, or electric, Generation III does it all!</p>
     </article>
@@ -219,11 +177,11 @@
       <img src="img/cooling_thumb_360.jpg">
     </div>
     <div class="col-lg-4">
-      <img src="http://www.placehold.it/360x267">
+      <img src="img/generator_thumb.jpg">
     </div>
   </section>
   <section class="container" id="what-we-offer">
-    <h4>FEATURED WORK</h4>
+    <h4>FEATURED SERVICES</h4>
     <article class="col-lg-4">
       <img src="img/plumbing_thumb.jpg">
       <h5>PLUMBING</h5>
@@ -236,7 +194,7 @@
       <p>The active GIII staff have over 100 years combined experience installing and mainting home a/c and heating systems ranging from Hi-Velocity to central heating and a/c.</p>
     </article>
     <article class="col-lg-4">
-      <img src="http://www.placehold.it/347x166">
+      <img src="img/electric_thumb.jpg">
       <h5>ELECTRIC</h5>
       <em>NJ STATE ELECTRIC LICENSE # 17552</em><br><br>
       <p>Generation III, Inc. recently joined GJ Pignatelli Electric to bring more value to your home in any job that we do!</p>
@@ -283,28 +241,16 @@
         <li><a href="#contact-us">Contact Us</a></li>
       </ul>
     </div>
-    <div class="col-lg-3 tagcloud">
-      <h3>Tags</h3>
-      <a href="http://www.google.com">Test</a>
-      <a href="http://www.google.com">Ak here</a>
-      <a href="http://www.google.com">Testing</a>
-      <a href="http://www.google.com">Click te</a>
-      <a href="http://www.google.com">Cli</a>
-      <a href="http://www.google.com">Google</a>
-      <a href="http://www.google.com">Click</a>
-      <a href="http://www.google.com">Hello World</a>
-      <a href="http://www.google.com">Click e</a>
-      <a href="http://www.google.com">Hello</a>
+    <div class="col-lg-3 contact">
+      <h3>Contact</h3>
+      <i class="glyphicon glyphicon-earphone"></i><span>201 445 6969</span><br><br>
+      <i class="glyphicon glyphicon-envelope"></i><span><a href="mailto:generation3inc@aol.com">generation3inc@aol.com</a></span><br><br>
+      <i class="glyphicon glyphicon-time"></i><span>24/7 Emergency Service</span>
     </div>
     <div class="col-lg-3">
-      <h3>Our Projects</h3>
-      <ul>
-        <li><a href="http://www.google.com">Click here</a></li>
-        <li><a href="http://www.google.com">Click here</a></li>
-        <li><a href="http://www.google.com">Click here</a></li>
-        <li><a href="http://www.google.com">Click here</a></li>
-        <li><a href="http://www.google.com">Click here</a></li>
-        <li><a href="http://www.google.com">Click here</a></li>
+      <h3>Licenses</h3>
+      PLUMBING LICENSE # 11872<br><br>
+      ELECTRIC LICENSE # 17552
       </ul>
     </div>
   </footer>
